@@ -83,6 +83,15 @@ import ContactSection from '~/components/Contact/ContactSection.vue'
 import OurSkill from '~/components/OurSkill.vue'
 
 export default {
+  head(){
+    return{
+      title: "About Page",
+      meta: [
+        { name: 'description', content: 'Home page meta description here' },
+        { name: 'keyword', content: 'Home page meta key here' },
+      ]
+    }
+  },
   components: {
     Logo, HomeHeader, ContactSection, OurSkill
   },

@@ -22,6 +22,15 @@ import PageHeader from '~/components/Header/PageHeader.vue'
 import ContactSection from '~/components/Contact/ContactSection.vue'
 
 export default {
+  head(){
+    return{
+      title: "Our work Page",
+      meta: [
+        { name: 'description', content: 'Our work page meta description here' },
+        { name: 'keyword', content: 'Our work page meta key here' },
+      ]
+    }
+  },
   components: {
     Logo, PageHeader, ContactSection
   },

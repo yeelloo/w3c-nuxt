@@ -64,6 +64,15 @@ import HomeHeader from '~/components/Header/HomeHeader.vue'
 import ContactSection from '~/components/Contact/ContactSection.vue'
 
 export default {
+  head(){
+    return{
+      title: "About Page",
+      meta: [
+        { name: 'description', content: 'About page meta description here' },
+        { name: 'keyword', content: 'About page meta key here' },
+      ]
+    }
+  },
   components: {
     Logo, HomeHeader, ContactSection
   },
